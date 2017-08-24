@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Add a New Dream Vacation</h1>
+    <form class="" action="/vacations/{{vacation._id}}" method="post">
+      <div class="">
+        <label for="location">Location</label>
+        <input type="text" name="location" value="{{vacation.location}}">
+      </div>
+
+      <div class="">
+        <label for="days">Number of Vacation Days</label>
+        <input type="number" name="days" value="{{vacation.days}}"> {{#errors.location}}Location is required!{{/errors.location}}
+      </div>
+
+      <div class="">
+        <label for="travelMethod">Which method of transportation is needed?</label>
+        <input type="text" name="travelMethod" value="{{vacation.travelMethod}}">
+      </div>
+
+      <button type="submit" name="button">Add a Vacation</button>
+
+    </form>
+
+    </form>
+  </body>
+</html>

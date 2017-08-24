@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Vacation Wish List!</h1>
+    <br>
+    <a href="/vacations/new">Add New Vacation</a>
+
+    {{#vacations}}
+    <li><a href="/vacations/{{_id}}">{{location}}</a></li>
+    {{/vacations}}
+
+  </body>
+</html>
